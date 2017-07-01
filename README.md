@@ -1,7 +1,7 @@
 # problem statement
 formats golang src code
 
-> note: ignores vendor directory as will be default in
+> note: ignores vendor directory
 
 # example usage
 
