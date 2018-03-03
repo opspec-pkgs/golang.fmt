@@ -1,33 +1,36 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/golang.fmt.svg?branch=master)](https://travis-ci.org/opspec-pkgs/golang.fmt)
 
+<img src="icon.svg" alt="icon" height="100px">
+
 # Problem statement
 
 formats golang src code
 
-> note: ignores vendor directory
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
 
 # Example usage
 
-> note: in examples, VERSION represents a version of the golang.fmt pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/golang.fmt#VERSION
+opctl pkg install github.com/opspec-pkgs/golang.fmt#1.0.0
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/golang.fmt#VERSION
+opctl run github.com/opspec-pkgs/golang.fmt#1.0.0
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/golang.fmt#VERSION }
-  inputs: 
+  pkg: { ref: github.com/opspec-pkgs/golang.fmt#1.0.0 }
+  inputs:
+    # params w/ default
     srcDir:
   outputs:
     srcDir:
@@ -37,7 +40,8 @@ op:
 
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
-or [open an issue](https://github.com/opspec-pkgs/golang.fmt/issues)
+or
+[open an issue](https://github.com/opspec-pkgs/golang.fmt/issues)
 
 # Releases
 
